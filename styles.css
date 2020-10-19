@@ -452,19 +452,29 @@ header > :first-child {
     display: block;
   }
 }
+.first-section {
+  background: linear-gradient(white, #eee);
+}
+
 .main-heading {
   padding-bottom: 40px;
   color: #ce973e;
   font-size: 2.25rem;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
+  text-align: center;
 }
 
 .main-sub-heading {
+  padding-bottom: 80px;
+}
+
+.paragraph-text {
   color: rgba(74, 74, 74, 0.7);
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
-  padding-bottom: 80px;
+  text-align: center;
+  line-height: 1.88;
 }
 
 .big-button {
@@ -491,6 +501,43 @@ header > :first-child {
 .main-banner-image {
   width: 100%;
   height: auto;
+}
+
+.how-section {
+  padding: 100px 0;
+}
+.how-section h2 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.how-primary {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.how-secondary {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.how-secondary img {
+  height: 165px;
+  width: auto;
+}
+
+.how-tile {
+  flex-direction: column;
+}
+.how-tile h4 {
+  margin: 50px 0 20px;
+  font-weight: bold;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

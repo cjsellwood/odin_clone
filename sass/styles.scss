@@ -68,7 +68,6 @@ header > :first-child {
   }
 }
 
-
 .menu-button {
   display: none;
   padding: none;
@@ -97,24 +96,35 @@ header > :first-child {
   }
 }
 
+.first-section {
+  background: linear-gradient(white, #eee);
+}
+
 .main-heading {
   padding-bottom: 40px;
   color: #ce973e;
   font-size: 2.25rem;
   font-family: $main-font;
   font-weight: 300;
+  text-align: center;
 }
 
 .main-sub-heading {
-  color: rgba(74,74,74,0.7);
+    padding-bottom: 80px;
+}
+
+.paragraph-text {
+  color: rgba(74, 74, 74, 0.7);
   font-family: $main-font;
   font-size: 1.125rem;
-  padding-bottom: 80px;
+
+  text-align: center;
+  line-height: 1.88;
 }
 
 .big-button {
   color: white;
-  box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
   border-radius: 0.2em;
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
@@ -130,12 +140,50 @@ header > :first-child {
 }
 
 .teal-button {
- background-color: rgb(106, 191, 195);
+  background-color: rgb(106, 191, 195);
 }
-
 
 .main-banner-image {
- width: 100%;
- height: auto;
+  width: 100%;
+  height: auto;
 }
 
+.how-section {
+  padding: 100px 0;
+
+  h2 {
+    font-family: $main-font;
+    font-weight: 700;
+    color: rgb(74, 74, 74);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+}
+
+.how-primary {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.how-secondary {
+  max-width: 1080px;
+  margin: 0 auto;
+
+  img {
+    height: 165px;
+    width: auto;
+  }
+}
+
+.how-tile {
+  flex-direction: column;
+
+  h4 {
+    margin: 50px 0 20px;
+    font-weight: bold;
+    font-family: $main-font;
+    font-size: 1.125rem;
+  }
+}
