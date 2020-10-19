@@ -98,6 +98,9 @@ header > :first-child {
 
 .first-section {
   background: linear-gradient(white, #eee);
+  .big-button {
+    margin-bottom: 60px;
+  }
 }
 
 .main-heading {
@@ -110,7 +113,7 @@ header > :first-child {
 }
 
 .main-sub-heading {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .paragraph-text {
@@ -136,11 +139,14 @@ header > :first-child {
   outline: none;
   font-size: 1em;
   padding: 1rem 3.5rem;
-  margin-bottom: 60px;
 }
 
 .teal-button {
   background-color: rgb(106, 191, 195);
+}
+
+.orange-button {
+  background-color: #cc9543;
 }
 
 .main-banner-image {
@@ -185,5 +191,58 @@ header > :first-child {
     font-weight: bold;
     font-family: $main-font;
     font-size: 1.125rem;
+  }
+}
+
+.curriculum-section {
+  padding: 60px 0;
+  background-color: rgb(243, 243, 243);
+  h2 {
+    text-align: center;
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    color: rgb(74, 74, 74);
+  }
+}
+
+.tech-tiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  max-width: 950px;
+
+
+  a {
+    display: block;
+    padding: 23px 46px 25px 46px;
+    margin: 15px;
+    background-color: #fff;
+    width: 254px;
+    // height: 256px;
+    font-weight: bold;
+    font-family: $main-font;
+    font-size: 1.125rem;
+    text-align: center;
+    color: rgb(74, 74, 74);
+    text-transform: uppercase;
+    box-shadow: 0 7px 16px 0 rgba(0,0,0,0.05)
+  }
+
+  h4 {
+    margin-top: 18px;
+  }
+  img {
+    width: 160px;
+    height: 160px;
+  }
+  @media (max-width: 554px) {
+    img {
+      width: 80px;
+      height: 80px;
+    }
   }
 }

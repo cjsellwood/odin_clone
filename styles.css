@@ -455,6 +455,9 @@ header > :first-child {
 .first-section {
   background: linear-gradient(white, #eee);
 }
+.first-section .big-button {
+  margin-bottom: 60px;
+}
 
 .main-heading {
   padding-bottom: 40px;
@@ -491,11 +494,14 @@ header > :first-child {
   outline: none;
   font-size: 1em;
   padding: 1rem 3.5rem;
-  margin-bottom: 60px;
 }
 
 .teal-button {
   background-color: #6abfc3;
+}
+
+.orange-button {
+  background-color: #cc9543;
 }
 
 .main-banner-image {
@@ -538,6 +544,55 @@ header > :first-child {
   font-weight: bold;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
+}
+
+.curriculum-section {
+  padding: 60px 0;
+  background-color: #f3f3f3;
+}
+.curriculum-section h2 {
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+  color: #4a4a4a;
+}
+
+.tech-tiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  max-width: 950px;
+}
+.tech-tiles a {
+  display: block;
+  padding: 23px 46px 25px 46px;
+  margin: 15px;
+  background-color: #fff;
+  width: 254px;
+  font-weight: bold;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
+}
+.tech-tiles h4 {
+  margin-top: 18px;
+}
+.tech-tiles img {
+  width: 160px;
+  height: 160px;
+}
+@media (max-width: 554px) {
+  .tech-tiles img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
