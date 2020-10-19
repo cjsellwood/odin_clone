@@ -215,7 +215,6 @@ header > :first-child {
   flex-wrap: wrap;
   max-width: 950px;
 
-
   a {
     display: block;
     padding: 23px 46px 25px 46px;
@@ -229,7 +228,7 @@ header > :first-child {
     text-align: center;
     color: rgb(74, 74, 74);
     text-transform: uppercase;
-    box-shadow: 0 7px 16px 0 rgba(0,0,0,0.05)
+    box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
   }
 
   h4 {
@@ -245,4 +244,90 @@ header > :first-child {
       height: 80px;
     }
   }
+}
+
+.success-section {
+  padding: 70px 0;
+  background: linear-gradient(white, #eee);
+  h2 {
+    text-align: center;
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    color: rgb(74, 74, 74);
+  }
+}
+
+.success-stories {
+  max-width: 1280px;
+  a {
+    color: #ce973e;
+    font-size: 1.125rem;
+    font-family: $main-font;
+    line-height: 1.88;
+  }
+
+  a:hover {
+    color: black;
+  }
+  p {
+    font-size: 1.125rem;
+    font-family: $main-font;
+    line-height: 1.88;
+    color: rgba(74, 74, 74, 0.7);
+  }
+  > div {
+    padding-bottom: 36px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .success-stories > .width-6 {
+    margin: 0 auto;
+    min-width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .success-stories > .width-6 {
+    margin: 0 auto;
+    min-width: 100%;
+  }
+}
+
+.story-image {
+  padding: 16px;
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}
+
+.read-more-link {
+  padding-top: 30px;
+  text-align: center;
+  font-family: $main-font;
+  color: rgba(74, 74, 74, 0.7);
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 60px;
+}
+
+.read-more-link:hover {
+  color: black;
+}
+
+.start-learning {
+  color: rgba(74, 74, 74, 0.7);
+  font-size: 2.2em;
+  line-height: 1.5em;
+  margin: 0 auto 2.5rem;
+  font-family: $main-font;
+  font-weight: 300;
+  text-align: center;
 }

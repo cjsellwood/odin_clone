@@ -595,4 +595,88 @@ header > :first-child {
   }
 }
 
+.success-section {
+  padding: 70px 0;
+  background: linear-gradient(white, #eee);
+}
+.success-section h2 {
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+  color: #4a4a4a;
+}
+
+.success-stories {
+  max-width: 1280px;
+}
+.success-stories a {
+  color: #ce973e;
+  font-size: 1.125rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.88;
+}
+.success-stories a:hover {
+  color: black;
+}
+.success-stories p {
+  font-size: 1.125rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.88;
+  color: rgba(74, 74, 74, 0.7);
+}
+.success-stories > div {
+  padding-bottom: 36px;
+}
+
+@media (max-width: 1200px) {
+  .success-stories > .width-6 {
+    margin: 0 auto;
+    min-width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .success-stories > .width-6 {
+    margin: 0 auto;
+    min-width: 100%;
+  }
+}
+.story-image {
+  padding: 16px;
+}
+.story-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.read-more-link {
+  padding-top: 30px;
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(74, 74, 74, 0.7);
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 60px;
+}
+
+.read-more-link:hover {
+  color: black;
+}
+
+.start-learning {
+  color: rgba(74, 74, 74, 0.7);
+  font-size: 2.2em;
+  line-height: 1.5em;
+  margin: 0 auto 2.5rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
