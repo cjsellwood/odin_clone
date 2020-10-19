@@ -362,78 +362,69 @@ a {
   flex-wrap: wrap;
 }
 
-/*Testing */
-.grid-12 {
-  outline: 1px solid red;
-  height: 90vh;
-  width: 90vw;
-  background-color: #ffc7c0;
+header.grid-12 {
+  margin-left: 150px;
+  flex-wrap: nowrap;
+  height: 100px;
+}
+header.grid-12 nav {
+  margin-left: 10px;
 }
 
-.row {
-  outline: 1px solid green;
+header > :first-child {
+  min-width: 226px;
+  margin-right: 10px;
 }
 
-.width-1 {
-  outline: 1px solid blue;
-  background-color: powderblue;
+.logo-link {
+  margin-right: 15px;
+  min-width: 226px;
+}
+.logo-link img {
+  height: 70px;
+}
+.logo-link div {
+  padding-left: 0.5em;
+  color: #cc9543;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "Amatic SC", cursive;
+}
+@media (max-width: 1036px) {
+  .logo-link div {
+    font-size: 1.6em;
+  }
 }
 
-.width-2 {
-  outline: 1px solid blue;
-  background-color: powderblue;
+.nav-list {
+  width: 530px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.nav-list a {
+  color: rgba(74, 74, 74, 0.7);
+  font-weight: 700;
+  padding: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  white-space: nowrap;
+}
+.nav-list a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+.nav-list .divider {
+  color: rgba(74, 74, 74, 0.7);
+  font-weight: 700;
+  padding: 0.5rem;
+  font-size: 24px;
 }
 
-.width-3 {
-  outline: 1px solid blue;
-  background-color: powderblue;
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
 }
-
-.width-4 {
-  outline: 1px solid blue;
-  background-color: powderblue;
-}
-
-.width-5 {
-  outline: 1px solid blue;
-  background-color: powderblue;
-}
-
-.width-6 {
-  outline: 1px solid blue;
-  background-color: powderblue;
-}
-
-.width-7 {
-  outline: 1px solid blue;
-  background-color: powderblue;
-}
-
-.width-8 {
-  outline: 1px solid blue;
-  background-color: powderblue;
-}
-
-.width-9 {
-  outline: 1px solid blue;
-  background-color: powderblue;
-}
-
-.width-10 {
-  outline: 1px solid blue;
-  background-color: powderblue;
-}
-
-.width-11 {
-  outline: 1px solid blue;
-  background-color: powderblue;
-}
-
-.width-12 {
-  outline: 1px solid blue;
-  background-color: powderblue;
-}
-
-/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */

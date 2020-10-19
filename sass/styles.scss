@@ -1,2 +1,69 @@
 @use 'framework';
 
+header.grid-12 {
+  margin-left: 150px;
+  flex-wrap: nowrap;
+  height: 100px;
+
+  nav {
+    margin-left: 10px;
+  }
+}
+
+header > :first-child {
+  min-width: 226px;
+  margin-right: 10px;
+}
+
+.logo-link {
+  margin-right: 15px;
+  min-width: 226px;
+  img {
+    height: 70px;
+  }
+
+  div {
+    padding-left: 0.5em;
+    color: #cc9543;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: "Amatic SC", cursive;
+  }
+  @media (max-width: 1036px) {
+    div {
+      font-size: 1.6em;
+    }
+  }
+}
+
+.nav-list {
+  width: 530px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  a {
+    color: rgba(74, 74, 74, 0.7);
+    font-weight: 700;
+    padding: 0.5rem;
+    font-family: "Open Sans", sans-serif;
+    white-space: nowrap;
+  }
+  a:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .divider {
+    color: rgba(74, 74, 74, 0.7);
+    font-weight: 700;
+    padding: 0.5rem;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+}
