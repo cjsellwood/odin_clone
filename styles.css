@@ -327,7 +327,7 @@ a {
 }
 
 .justify-content-end {
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .justify-content-center {
@@ -366,6 +366,7 @@ header.grid-12 {
   margin-left: 150px;
   flex-wrap: nowrap;
   height: 100px;
+  margin-bottom: 50px;
 }
 header.grid-12 nav {
   margin-left: 10px;
@@ -396,6 +397,9 @@ header > :first-child {
   .logo-link div {
     font-size: 1.6em;
   }
+  .logo-link img {
+    height: 60px;
+  }
 }
 
 .nav-list {
@@ -408,7 +412,7 @@ header > :first-child {
   color: rgba(74, 74, 74, 0.7);
   font-weight: 700;
   padding: 0.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   white-space: nowrap;
 }
 .nav-list a:hover {
@@ -421,10 +425,72 @@ header > :first-child {
   font-size: 24px;
 }
 
+.menu-button {
+  display: none;
+  padding: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.menu-button img {
+  width: 30px;
+  height: 30px;
+}
+
 @media (max-width: 768px) {
-  .nav-list {
+  header.grid-12 {
+    margin: 0 20px;
+  }
+
+  header nav.width-8 {
     display: none;
   }
+
+  .menu-button {
+    display: block;
+  }
+}
+.main-heading {
+  padding-bottom: 40px;
+  color: #ce973e;
+  font-size: 2.25rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.main-sub-heading {
+  color: rgba(74, 74, 74, 0.7);
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  padding-bottom: 80px;
+}
+
+.big-button {
+  color: white;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 1rem 3.5rem;
+  margin-bottom: 60px;
+}
+
+.teal-button {
+  background-color: #6abfc3;
+}
+
+.main-banner-image {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

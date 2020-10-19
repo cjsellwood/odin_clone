@@ -1,9 +1,12 @@
 @use 'framework';
 
+$main-font: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 header.grid-12 {
   margin-left: 150px;
   flex-wrap: nowrap;
   height: 100px;
+  margin-bottom: 50px;
 
   nav {
     margin-left: 10px;
@@ -35,6 +38,9 @@ header > :first-child {
     div {
       font-size: 1.6em;
     }
+    img {
+      height: 60px;
+    }
   }
 }
 
@@ -47,7 +53,7 @@ header > :first-child {
     color: rgba(74, 74, 74, 0.7);
     font-weight: 700;
     padding: 0.5rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: $main-font;
     white-space: nowrap;
   }
   a:hover {
@@ -62,8 +68,74 @@ header > :first-child {
   }
 }
 
-@media (max-width: 768px) {
-  .nav-list {
-    display: none;
+
+.menu-button {
+  display: none;
+  padding: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+
+  img {
+    width: 30px;
+    height: 30px;
   }
 }
+
+@media (max-width: 768px) {
+  header.grid-12 {
+    margin: 0 20px;
+  }
+
+  header nav.width-8 {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+.main-heading {
+  padding-bottom: 40px;
+  color: #ce973e;
+  font-size: 2.25rem;
+  font-family: $main-font;
+  font-weight: 300;
+}
+
+.main-sub-heading {
+  color: rgba(74,74,74,0.7);
+  font-family: $main-font;
+  font-size: 1.125rem;
+  padding-bottom: 80px;
+}
+
+.big-button {
+  color: white;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 1rem 3.5rem;
+  margin-bottom: 60px;
+}
+
+.teal-button {
+ background-color: rgb(106, 191, 195);
+}
+
+
+.main-banner-image {
+ width: 100%;
+ height: auto;
+}
+
